@@ -12,15 +12,16 @@ Este repositorio contiene un modelo de clasificación de tweets utilizando Machi
 
 ## 📂 Estructura del repositorio
 ```plaintext
-ML_Classification_Tweets/
+📂 ML_Classification_Tweets/
 │
-├── Deployment/
-│   ├── .streamlit/                  # Configuración de Streamlit
-│   ├── app.py                        # Aplicación principal en Streamlit
-│   ├── clean_text_func.py             # Funciones para limpieza de texto
-│   ├── convertir_texto.py             # Conversión y procesamiento de datos
-│   ├── new_variables.py               # Creación de nuevas variables
-│   ├── requirements.txt               # Dependencias del proyecto
+├── 🚀 Deployment/                 # Carpeta de despliegue de la app
+│   ├── 📁 .streamlit/              # Configuración de la app en Streamlit
+│   ├── 📜 app.py                   # Script principal para ejecutar la app
+│   ├── 🧹 clean_text_func.py        # Funciones para limpieza de texto
+│   ├── 🔄 convertir_texto.py        # Conversión y procesamiento de datos
+│   ├── 📊 new_variables.py          # Generación de nuevas variables para el modelo
+│   ├── 📦 requirements.txt          # Lista de dependencias del proyecto
+│
 ```
 
 ## 🛠 Tecnologías utilizadas
