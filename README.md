@@ -14,6 +14,7 @@ Este repositorio contiene un modelo de clasificación de tweets utilizando Machi
 * new_variables.py → Creación de nuevas variables para mejorar el modelo.
 * .streamlit/config.toml → Configuración de la aplicación en Streamlit.
 * requirements.txt → Lista de dependencias necesarias para ejecutar el proyecto.
+  
 🛠 Tecnologías utilizadas
 * Python 🐍
 * Streamlit 📊
