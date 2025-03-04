@@ -7,7 +7,7 @@ https://ml-classification-tweet.streamlit.app/
 
 Este repositorio contiene un modelo de clasificación de tweets utilizando Machine Learning. Se implementa en Streamlit para una interfaz interactiva.
 
-📂 Estructura del repositorio
+## 📂 Estructura del repositorio
 ```plaintext
 ML_Classification_Tweets/
 │
@@ -20,8 +20,10 @@ ML_Classification_Tweets/
 │   ├── requirements.txt               # Dependencias del proyecto
 ```
 
-🛠 Tecnologías utilizadas
+## 🛠 Tecnologías utilizadas
 * Python 🐍
 * Streamlit 📊
 * scikit-learn 🤖
-* pandas, numpy, nltk, vader 🧹
+* pandas, numpy, nltk, vaderSentiment, textblob ... 🧹
+
+
