@@ -1,19 +1,11 @@
-streamlit==1.41.1
-transformers==4.48.2
-vaderSentiment==3.3.2
+xgboost==2.1.4
 textblob==0.19.0
-scikit-learn==1.6.1
+streamlit==1.42.2
+vaderSentiment==3.3.2
 nltk==3.9.1
-num2words==0.5.14
-numpy==2.2.2
+numpy==2.2.3
 pandas==2.2.3
 joblib==1.4.2
 emoji==2.14.1
-
-## pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
-## Se utiliza en windows para instalar pytorch, necesario para usar transformers de Huggingface 
-
-torch==2.6.0+cpu
-torchaudio==2.6.0+cpu
-torchvision==0.21.0+cpu
+scikit-learn==1.6.1
 
