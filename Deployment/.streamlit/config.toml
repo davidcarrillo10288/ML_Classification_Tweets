@@ -1,2 +1,6 @@
-[general]
-debug = true
+[theme]
+base="dark"
+primaryColor="#fd0000"
+backgroundColor="#000000"
+secondaryBackgroundColor="#020e71"
+font="monospace"
