@@ -8,8 +8,6 @@ import io
 from xgboost import XGBClassifier
 from sklearn.ensemble import RandomForestClassifier
 
-st.title('Modelo de Clasificación de Tweets')
-st.subheader('Aplicación del modelo de clasificación de tweets')
 
 ## cargar modelos entrenados en colab
 @st.cache_resource
@@ -38,11 +36,11 @@ def cargar_scaler():
     modelo = joblib.load(io.BytesIO(response.content))
     return modelo
 
-# Cargar los modelos
-
+# Cargar los modelos desde github
 modelo_cargado = cargar_modelo()
 scaler_cargado = cargar_scaler()
 
+## Función para predecir el sentimiento del texto
 def prediction(df_num):
   df_num = scaler_cargado.transform(df_num)
   prediccion = modelo_cargado.predict(df_num)
@@ -52,10 +50,27 @@ def prediction(df_num):
     result = 'Positivo'
   return result
 
+
+# URL de la imagen en GitHub (en formato "raw")
+image_principal = "https://github.com/davidcarrillo10288/ML_Classification_Tweets/raw/master/Images/clasification_tweets_image.png"
+image_url_negative = "https://github.com/davidcarrillo10288/ML_Classification_Tweets/raw/master/Images/negative.png"
+image_url_positive = "https://github.com/davidcarrillo10288/ML_Classification_Tweets/raw/master/Images/positive.png"
+
 if __name__ == '__main__':
+  st.title('Modelo de Clasificación de Tweets')
+  st.subheader('Aplicación del modelo de clasificación de tweets')
+  st.image(image_principal)
   text = st.text_input("Ingrese un texto:")
+  
   if text:
-      df = convertir_texto(text)
-      df_num = tranformation(convertir_texto(df))
-      result = prediction(df_num)
-      st.write(f'El texto es {result}')
+      # Centrando la imagen con st.columns
+      col1, col2, col3 = st.columns([1, 1, 1])  # La columna del medio es más grande
+      
+      with col2:    
+        df = convertir_texto(text)
+        df_num = tranformation(convertir_texto(df))
+        result = prediction(df_num)
+        if result.lower() == 'positivo':
+            st.image(image_url_positive, caption="Positivo", width=200)
+        else:
+            st.image(image_url_negative, caption="Negativo", width=200)
