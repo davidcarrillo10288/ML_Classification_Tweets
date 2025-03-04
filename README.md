@@ -2,12 +2,13 @@
 
 Link: https://ml-classification-tweet.streamlit.app/
 
-## DESCRIPCIÓN:
+## 📌 DESCRIPCIÓN:
 El objetivo de este proyecto es analizar los sentimientos de los tweets, identificando si los mensajes son positivos o negativos. Utilizando un conjunto de datos de 1,600,000 tweets preprocesados, se pretende generar diversas características que se utilizarán para entrenar un modelo de clasificación.
 
 ![image](https://github.com/user-attachments/assets/7f355f4b-9681-4c19-8191-00c16f0e6bc0)
 
-Este repositorio contiene un modelo de clasificación de tweets utilizando Machine Learning. Se implementa en Streamlit para una interfaz interactiva.
+Este repositorio contiene una aplicación de clasificación de tweets con Machine Learning, desarrollada con **Streamlit**. 
+Incluye procesamiento de texto, generación de variables y un modelo de clasificación para analizar el contenido de los tweets. 
 
 ## 📂 Estructura del repositorio
 ```plaintext
